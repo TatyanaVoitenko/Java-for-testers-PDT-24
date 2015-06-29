@@ -1,7 +1,5 @@
 package com.example.fw;
 
-import static org.junit.Assert.fail;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -12,7 +10,6 @@ public class ApplicationManager {
 	public  WebDriver driver;
 	public  String baseUrl;
 	
-	//private StringBuffer verificationErrors = new StringBuffer();
 	private NavigationHelper navigationHelper;
 	private GroupHelper groupHelper;
 	private ContactHelper contactHelper;
@@ -24,11 +21,7 @@ public class ApplicationManager {
 	}
 	public void stop() {
 		driver.quit();
-//		String verificationErrorString = verificationErrors.toString();
-//		if (!"".equals(verificationErrorString)) {
-//			fail(verificationErrorString);
-//		}
-		
+	
 	}
 	public NavigationHelper getNavigationHelper(){
 		if (navigationHelper==null) {
