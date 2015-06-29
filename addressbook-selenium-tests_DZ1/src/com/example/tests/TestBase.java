@@ -4,13 +4,16 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.example.fw.ApplicationManager;
+import com.example.fw.NavigationHelper;
 
 public class TestBase {
-	protected ApplicationManager app;
+	protected static ApplicationManager app;
 	
 	@BeforeTest
-	public void setUp() throws Exception {
+	public  void setUp() throws Exception {
 		app=new ApplicationManager();
+
+		
 	
 	}
 
